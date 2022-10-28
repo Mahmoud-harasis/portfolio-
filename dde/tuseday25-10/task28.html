@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 { grid-area: header;  }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'main main main main right right'
+            'main main main main right right'
+            'main main main main right right'
+            'footer footer footer footer footer footer'
+            'footer footer footer footer footer footer';
+          gap: 5px;
+          background-color: #fff;
+          padding: 10px;
+          grid-template-rows: repeat(6, 1fr);
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1" style="background-color: #000;"></div>
+        <div class="item3" style="background-color: rgb(26, 255, 0);"></div>  
+        <div class="item4" style="background-color: green;"></div>
+        <div class="item5" style="background-color: blue;"></div>
+      </div>      
+</body>
+</html>

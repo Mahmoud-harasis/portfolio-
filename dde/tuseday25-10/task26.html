@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Task 2</title>
+
+    <style>
+
+        body {
+            background-color: rgb(82, 191, 15);
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+        }
+
+        #grid {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            width: 200px;
+            border-radius: 10px;
+            background-color: rgb(140, 194, 133);
+        }
+
+        h1 {
+            font-size: 10px;
+          
+        }
+
+        p {
+            font-size: 5px;
+            color: rgb(39, 35, 35);
+        }
+
+        .img {
+            width: 20px ;
+            height: 20px ;
+        }
+
+        #img-one {
+            
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #img-two {
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #img-three {
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #img-four {
+            position: absolute;
+            position: relative;
+            top: 5px;
+            left: 5px;
+        }
+
+        #hr1 {
+            width: 150px;
+            position: absolute;
+            right: 5px;
+            top: 25px;
+        }
+        #hr2 {
+            width: 150px;
+            position: absolute;
+            right: 5px;
+            top: 60px;
+        }
+        #hr3 {
+            width: 150px;
+            position: absolute;
+            right: 5px;
+            top: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="grid">
+
+            <img class="img" id="img-one" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #1</h1>
+                <p>Amman, Jordan</p>
+                <hr id="hr1">
+            </div>
+
+            <img class="img" id="img-two" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #2</h1>
+                <p>Aqaba, Jordan</p>
+                <hr id="hr2" >
+            </div>
+
+            <img class="img" id="img-three" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #3</h1>
+                <p>Zarqa, Jordan</p>
+                <hr id="hr3" >
+            </div>
+
+            <img class="img" id="img-four" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user-icon">
+            <div>
+                <h1>User #4</h1>
+                <p>Irbid, Jordan</p>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

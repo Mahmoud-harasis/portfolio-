@@ -1,7 +1,5 @@
 *{
-    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-
-  --bs-body-font-family: var(--bs-font-sans-serif);
+   box-sizing: border-box;
 }
 #logo{
 width: 50px;
@@ -38,7 +36,7 @@ body{
 #myname #edit{
     border: 0;
     width: 30%;
-    font-size: 25px;
+    font-size: 23px;
     position: absolute;
     left: 400px;
 }
@@ -100,12 +98,7 @@ body{
     list-style: none;
     --bs-dark-rgb: #02446800;
   }
-  .options{
-    margin-left: 10%;
-    margin-top: 3%;
-    font-size: 50px;
-    display: inline-block;
-  }
+ 
   .bg-dark {
     --bs-bg-opacity: 1;
     background-color:#02446800!important ;
@@ -129,5 +122,207 @@ body{
     --bs-navbar-hover-color:#024468;
    
 }
+.text-bg-dark {
+    color: rgb(0, 0, 0)!important;
+    background-color: #A5C1CE!important;
+    
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #000;
+}
 
-  
+.h5, h5 {
+    font-size: 1.80rem;
+}
+.btn-success {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #024468;
+    --bs-btn-border-color: #024468;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #dc3545;
+    --bs-btn-hover-border-color: #dc3545;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color:#024468 ;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: #024468;
+    background-color: transparent;
+    border: var(--bs-border-width) solid rgb(255 255 255 / 0%);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+
+#EDUCATION{
+    position: absolute;
+    top: 95%;
+    left: 600px;
+
+}
+#HIGHSCHOOL{
+    margin: 50px;
+    padding: 7px 0 0 7px;
+border: 2px solid black;
+border-radius: 10px;
+width: 300px;
+position: absolute;
+top: 100%;
+left: 15%;
+font-size: 15px;
+box-sizing: border-box;
+
+}
+#ORANGE{
+    margin: 50px;
+    padding: 7px 0 0 7px;
+border: 2px solid black;
+border-radius: 10px;
+width: 300px;
+position: absolute;
+top: 100%;
+left: 50%;
+font-size: 15px;
+box-sizing: border-box;
+}
+#PROJECTS{
+    position: absolute;
+    top: 145%;
+    left: 600px;
+
+
+}
+#golden{
+ width: 200px;
+ height: 200px;
+ border: #000 solid 4px;
+ position: absolute;
+ top: 155%;
+ left: 20%;
+
+}
+#School{
+    width: 200px;
+ height: 200px;
+ border: #000 solid 4px;
+ position: absolute;
+ top: 155%;
+ left: 40%;
+}
+#apk{
+    width: 200px;
+ height: 200px;
+ border: #000 solid 4px;
+ position: absolute;
+ top: 155%;
+ left: 60%;
+}
+#EXPERIENCE{
+    position: absolute;
+    top: 195%;
+    left: 600px;
+}
+#EXPERIENCE1{
+    position: absolute;
+    top: 206%;
+    left: 150px;
+    border: rgba(0, 0, 0, 0)  solid 1px;
+    width: 60%;
+}
+#SKILLS{
+    position: absolute;
+    top: 237%;
+    left: 650px;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #024468;
+   
+}
+.progress {
+    background-color: #ffffff48;
+    width: 30%;
+    position: absolute;
+    top: 250%;
+    left: 200px;
+
+}
+.progress1 {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #ffffff48;
+    --bs-progress-border-radius: 0.375rem;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius);
+    width: 30%;
+    position: absolute;
+    top: 260%;
+    left: 200px;
+
+}
+.SKILLS3 {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: #ffffff48;
+    --bs-progress-border-radius: 0.375rem;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    height: var(--bs-progress-height);
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: var(--bs-progress-border-radius);
+    width: 30%;
+    position: absolute;
+    top: 270%;
+    left: 200px;
+
+}
+
+
+
+
+
+
+#HTMLP{
+    position: absolute;
+    top: 245%;
+    left: 200px;
+
+}
+#CSSP{
+    position: absolute;
+    top: 255%;
+    left: 200px;
+
+}
+#JSP{
+    position: absolute;
+    top: 265%;
+    left: 200px;
+
+}

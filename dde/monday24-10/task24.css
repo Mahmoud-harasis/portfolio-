@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    transition:  5s;
+}
+#logo:hover{
+    bottom: 10px;
+}
+
+.RightSide{
+    transition: width 5s;
+}
+
+.RightSide:hover{
+    width: 1000px;
+}
+.container{
+    /* background-color: aqua; */
+    width: 50%;
+    margin: 0 auto;
+}
+
+.simeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.leftSide{
+    display: flex;
+}
+.title{
+    margin-left: 4px;
+}
+.title p{
+    font-size: 10px;
+}
+.icon{
+    font-size: 1.3rem;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.fa-solid.fa-utensils{
+    font-size: 2rem;
+    color: #fff;
+    background-color: #333; 
+    padding: 4px;
+}
+
+hr{
+    margin-top: 10px;
+    border-style: inset;
+    border: 3px inset #333;
+}
+
+.title2{
+    font-weight: 700;
+    font-size: 1,2rem;
+}
+
+.choco{
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+.third p{
+    margin-top: 10px;
+}
+
+.paper{
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+    background-image: url('paper.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding-inline: 7px;
+}
+.paper div{
+    margin-right: 10px;
+}
+
+.fourth{
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+}
+.content{
+    margin-right: 40px;
+}
+.mt{
+    width: 60px;
+    border-radius: 50%;
+}
+#bottom{
+    width: 150px;
+    height: 30px;
+    margin-top: 65px;
+    border: 3px solid #000;
+    background-color: crimson;
+    color: #fff;
+    animation: backwards;
+    transition: width 5s;
+}
+
+#bottom:hover{
+    width: 1000px;
+}
+.text{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.text > *{
+    margin: 20px;
+}
