@@ -1,249 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahmoud Harasis</title>
-  <link rel="icon" href="./imge/logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/stayle.css">
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-<style>
-.py-0 {
-  padding-top: 10rem !important;
-  padding-bottom: 4rem !important;
-}
-
-.fa-github , .fa-youtube{
-    font-size: 30px;
-    margin: 10px;
-}
-.fa-linkedin , .fa-twitter{
-  font-size: 30px;
-  margin: 10px;
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <div class="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top py-1 ">
-    <div class="container">
-      <a href="#" class="navbar-brand"><img src="./imge/logo.png" alt="logo"></a>
-       
-       <button
-       class="navbar-toggler"
-       type="button" data-bs-toggle="collapse"
-       data-bs-target="#mainmenu" 
-       > <span class="navbar-toggler-icon"></span> </button>
-
-    <div class="collapse navbar-collapse" id="mainmenu" >
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#hero" class="nav-link">HOME</a></li>
-        <li class="nav-item"><a href="#EDUCATION" class="nav-link">EDUCATION</a></li>
-        <li class="nav-item"><a href="#PROJECTS" class="nav-link">PROJECTS</a></li>
-        <li class="nav-item"><a href="#SKILLS" class="nav-link">SKILLS</a></li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">SOCIAL MEDIA</a>
-          <ul class="dropdown-menu">
-            <li><a href="https://www.linkedin.com/in/mahmoud-harasis-788774221/" class="dropdown-item" target="_blank">linkedin</a></li>
-            <li><a href="https://github.com/Mahmoud-harasis" class="dropdown-item" target="_blank">github</a></li>
-            <li><a href="https://twitter.com/tsouuo" class="dropdown-item" target="_blank">twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/UCoE-3aplwXoXUoUG6YJJ-Mg" class="dropdown-item" target="_blank">youtube</a></li>
-          </ul>
-        </li>
-      </ul>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mahmoud</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
     </div>
-    </div>
-  </div> 
-  
 
-
-    <!---heroo-->
-
-    <section id="hero" class="bg-dark text-light text-center text-sm-start py-0">
-    <div class="container ">
-      <div class="d-sm-flex align-items-center">
-        <div>
-          <h1 class="display-5">Mahmoud Kahled <br>
-          <span class="text-warning">Harasis</span></h1>
-          <p class="py-1 lead">I am a software engineer with adaptability in all collaborative, personal and professional environments. With analytical abilities, problem solving and making the right decisions</p>
-          <a class="btn btn-warning align" download="cv mahmoud" href="./imge/mody cv.pdf" target="_blank">HIRE ME</a>
-         
-        </div>
-        
-          <img class="  img-fluid w-75 " src="./imge/200.png" alt="Mahmoud-harasis">
-        
-      </div>
-    </div>
-    </section>
-
-    <!--ssss-->
-    <section class="py-5" id="EDUCATION">
-      <div class="container ">
-        <h2 class="text-center mb-20">EDUCATION</h2>
-        <div class="row text-center">
-         
-
-         <div class="col-sm">
-          <div class="card bg-dark text-light mb-5 ">
-            <div class="card-body text-center">
-              <h5 class="card-title text-warning">Orange Coding Academy</h5>
-              <p class="card-text">Trainee full stack web developer  </p>
-              <p class="card-text">2022-2023</p>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
             </div>
-          </div>
-         </div>
-
-
-
-
-
-         <div class="col-sm">
-          <div class="card bg-dark text-light mb-5 ">
-            <div class="card-body text-center">
-              <h5 class="card-title text-warning">HIGHSCOOL</h5>
-              <p class="card-text">Scientific Model  School</p>
-              <p class="card-text">2018-2020</p>
+            <h1>Mahmoud Harasis</h1>
+            <h2>Software Engineer - Full Stack Web Developer</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/kx.ir/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@mahmoudharasis2546"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Mahmoud-harasis"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mahmoud-harasis-788774221/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/mahmoudcraft"><i class="fa-brands fa-behance"></i></a>
             </div>
-          </div>
-         </div>
-
-      </div> 
-    </section>
-
-
-
-
-
-
-    <section class="py-5" id="PROJECTS">
-      <div class="container">
-        
-        <h2 class="text-center mb-20">PROJECTS</h2>
-        <div class="row text-center">
-         <div class="col-sm">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body text-center">
-              <img src="./imge/POWER.png" class="card-img-top w-50" alt="Golden Tour">
-              <h5 class="card-title text-warning">PowerMod</h5>
-              <p class="card-text">The site helps you to download paid applications for free, securely and exclusively, and there are many applications and games</p>
-              <a class="btn btn-warning align"  href="https://powermod0.blogspot.com/" target="_blank">GO PROJECT</a>
-            </div>
-          </div>
-         </div>
-
-        
-
-         <!-- <div class="col-sm">
-          <div class="card bg-dark text-light mb-3">
-            <div class="card-body text-center">
-              <img src="./imge/020520.png" class="card-img-top w-50 h-50 py-2px" alt="Golden Tour">
-              <h5 class="card-title text-warning">Golden Tour</h5>
-              <p class="card-text">The site helps you solve your tourism problems and book in the Golden Triangle at the lowest prices and the most beautiful areas </p>
-              <a class="btn btn-warning align"href="https://miro.com/app/board/uXjVPOzArMc=/" target="_blank">GO PROJECT</a>
-            </div>
-          </div>
-         </div> -->
-
-
-
-         
-          <div class="col-sm">
-           <div class="card bg-dark text-light mb-3">
-             <div class="card-body text-center">
-               <img src="./imge/leeo1.png" class="card-img-top w-25" alt="LEEO BRAND">
-               <h5 class="card-title text-warning">LEEO BRAND</h5>
-               <p class="card-text">My new site is the most beautiful site for selling clothing brands under the roof of Brand Leeo</p>
-               <a class="btn btn-warning align"  href="#" target="_blank">COOMING SOON</a>
-             </div>
-           </div>
-
-      </div> 
-    </section>
-
-
-
-
-
-
-
-    
-    <section id="EXPERIENCE " class="py-5 bg-dark text-light">
-      <div class="container ">
-        <h2 class="text-center mb-3">EXPERIENCE</h2>
-        <p class="text-center ">
-          I previously worked for Graphic Design companies, and I am a content creator and influencer on <br> YouTube, and I designed many websites, and for more information click on  hire me.
-        </p>
         </div>
     </section>
 
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About me</h2>
+            <p><span>Hi, I'm Mahmoud Harasis.</span> I am a software engineer with adaptability in all collaborative, personal and professional environments. With analytical abilities, problem solving and making the right decisions</p>
 
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal information</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday</strong>
+                            17-12-2003
+                        </li>
+                        <li>
+                            <strong>Phone</strong>
+                            +962778082245
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            Amman/Jordan
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            mahmoudharasis8@gmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>Design</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORT</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="m" href="" target="_blank" download="cv mahmoud">
+                 CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
 
-  </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Laravl</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ReactJs</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>ReduxJs</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="SKILLS" class="py-5 ">
-    <div class="container">
-      <h2 class="text-center mb-3">SKILLS</h2>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Information and network security</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">2023 - Future </span>
+                        <p>Student at Al Balqa Applied College</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Orange Coding Academy</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Trainee full stack web developer</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>AHIGHSCOOL</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">2019-2020</span>
+                        <p>Scientific Model  School</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- <div class="col derecha">
+                    <h3>Work experience</h3>
+                    <div class="item der">
+                        <h4></h4>
+                        <span class="casa"></span>
+                        <span class="fecha"></span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                    
+                </div> -->
+            </div>
+        </div>
+    </section>
 
-      <div>
-        <p>HTML</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
-      </div>
-       </div>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                    <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative design</h3>
+                        <p>Photography</p>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
 
-       <div>
-        <p>css</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
-      </div>
-       </div>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="Mail address">
+                    <input type="text" placeholder="He">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Send Message<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <strong>Phone</strong>
+                                +962778082245
+                            </li>
+                            <li>
+                                <strong>Address</strong>
+                                Amman/Jordan
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                mahmoudharasis8@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-       <div>
-        <p>JavaScript</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-      </div>
-       </div>
-       <div>
-        <p>Php</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
-      </div>
-       </div>
-       <div>
-        <p>Laravl</p>
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">35%</div>
-      </div>
-       </div>
-      </div>
-  </section>
-
-
-    <footer class="py-3 bg-dark text-white text-center">
-    <div class="container">
-     <p class="lead">
-      Copyright &copy; 2022 Mahmoud Harasis
-     </p>
-     <p>EMAIL : mahmoudharasis8@gmail.com</p>
-     <p>PHONE NUMBER : +962778082245</p>
-    </div>
-    <a href="https://github.com/Mahmoud-harasis" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/mahmoud-harasis-788774221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-
-    <a href="https://www.youtube.com/channel/UCoE-3aplwXoXUoUG6YJJ-Mg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-
-    <a href="https://twitter.com/tsouuo" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://www.instagram.com/kx.ir/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@mahmoudharasis2546"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Mahmoud-harasis"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mahmoud-harasis-788774221/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.behance.net/mahmoudcraft"><i class="fa-brands fa-behance"></i></a>
+        </div>
     </footer>
-   
 
+    <script src="script.js"></script>
 </body>
 </html>
